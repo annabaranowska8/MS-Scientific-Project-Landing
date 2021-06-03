@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px Montserrat;
 }
 
 .wrapper {
@@ -66,31 +66,55 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: white/grey/yellow Theme
    =================== */
 
+/*
+University theme colors:
+(header)
+#4A4A49 dark grey
+(body)
+#FBB800 selective yellow
+#ECECEC platinum
+#3A3A3A grey - main text
+*/
+
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-top: 46px solid #4A4A49;
+}
+
+.main-container {
+    margin-top: 150px;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 15px solid #4A4A49;
 }
 
 .header-container,
-.footer-container,
+.footer-container, {
+    background: #ECECEC;
+}
+
 .main aside {
-    background: #f16529;
+    background: #FBB800;
 }
 
 .title {
-    color: white;
+    color: #4A4A49;
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
+
+.header-container {
+    position: fixed;
+    width: 100%;
+    background: #FFF;
+    top: 0;
+}
 
 nav ul {
     margin: 0;
@@ -105,20 +129,17 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
 
-    color: white;
-    background: #e44d26;
+    color: #4A4A49;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #4A4A49;
+    text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
 
 /* ==============
     MOBILE: Main
@@ -133,12 +154,12 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: #4A4A49;
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
+    color: #4A4A49;
     padding: 20px 0;
 }
 
@@ -324,7 +345,7 @@ nav a:hover {
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {
