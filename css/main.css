@@ -80,20 +80,23 @@ University theme colors:
 */
 
 .header-container {
-    border-top: 46px solid #4A4A49;
+    border-top: 10px solid #4A4A49;
 }
 
 .main-container {
     margin-top: 150px;
 }
 
-.footer-container,
-.main aside {
+.footer-container {
     border-top: 15px solid #4A4A49;
 }
 
+/* .main aside {
+    border-top: 15px solid #4A4A49;
+} */
+
 .header-container,
-.footer-container, {
+.footer-container {
     background: #ECECEC;
 }
 
@@ -105,24 +108,53 @@ University theme colors:
     color: #4A4A49;
 }
 
+.team-container {
+    background: #fff;
+    margin-bottom: 0px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* .team-container ~ p {
+    justify-content: center;
+} */
+/* 
+.team-member {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 10px;
+} */
+
 /* ==============
     MOBILE: Menu
    ============== */
 
 .header-container {
     position: fixed;
+    float: left;
     width: 100%;
     background: #FFF;
     top: 0;
 }
 
-nav ul {
+.logo img {
+    float: left;
+    width: 327px;
+    height: 71px;
+    background: #FFF;
+}
+
+.menu {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
 }
 
 nav a {
+    
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
@@ -131,13 +163,15 @@ nav a {
     text-decoration: none;
     font-weight: normal;
 
+    text-shadow: 1px 1px #fff;
     color: #4A4A49;
 }
 
-nav a:hover,
-nav a:visited {
+nav a:hover {
+    text-shadow: 1px 1px #4A4A49;
     color: #4A4A49;
     text-decoration: none;
+    
 }
 
 
@@ -220,7 +254,7 @@ nav a:visited {
    ======================== */
 
     nav ul li {
-        display: inline;
+        display: block;
     }
 
     .oldie nav a {
@@ -249,10 +283,10 @@ nav a:visited {
         float: left;
     }
 
-    nav {
+    /* nav {
         float: right;
         width: 38%;
-    }
+    } */
 
 /* ============
     WIDE: Main
@@ -391,4 +425,11 @@ nav a:visited {
     h3 {
         page-break-after: avoid;
     }
+}
+
+.menulist {
+    display: flex;
+    margin-right: 0;
+    gap: 40px;
+    align-items: center;
 }
