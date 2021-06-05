@@ -83,25 +83,55 @@ University theme colors:
     border-top: 10px solid #4A4A49;
 }
 
-.main-container {
-    margin-top: 150px;
-}
-
-.footer-container {
-    border-top: 15px solid #4A4A49;
-}
-
-/* .main aside {
+/* .footer-container {
     border-top: 15px solid #4A4A49;
 } */
 
-.header-container,
-.footer-container {
+/* .main aside {
+    border-top: 8px solid #4A4A49;
+} */
+
+.header-container {
     background: #ECECEC;
+}
+
+.main {
+    border-bottom: 1px solid;
+    border-bottom-color: #4A4A49;
+}
+
+.footer-container {
+    display: flex;
+    background: rgba(0, 0, 0, 0.952);
+}
+.footer-container p {
+    color: #fff;
+    font-weight: 200;
+}
+
+.footer-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FBB800;
+    font-weight: 400;
+    width: 58%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer-container a:hover {
+    color: #fff;
+}
+
+.footer-container p a {
+    display: inline-block;
 }
 
 .main aside {
     background: #FBB800;
+    margin-top: 30px;
 }
 
 .title {
@@ -116,11 +146,11 @@ University theme colors:
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 3em;
 }
 
 .team-container p {
     display: inline-block;
-    justify-content: center;
 }
 
 .team-member {
@@ -132,25 +162,44 @@ University theme colors:
 .team-member img {
     /* max-width: 100px; */
     width: 100%;
+    -webkit-box-shadow: 0 10px 10px #4A4A49;
+       -moz-box-shadow: 0 5px 10px #4A4A49;
+            box-shadow: 0 5px 15px #4A4A49;
 }
+
+.contact-container {
+    background: #FBB800;
+    height: 10em;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 3px -2px 14px #4A4A49;
+}
+/* .contact-title h1 {
+} */
 
 /* ==============
     MOBILE: Menu
    ============== */
 
 .header-container {
-    position: fixed;
     float: left;
     width: 100%;
     background: #FFF;
     top: 0;
 }
 
+.logo {
+    display: flex;
+}
 .logo img {
     float: left;
     width: 327px;
     height: 71px;
     background: #FFF;
+}
+
+.logo a {
+    width: 100%;
 }
 
 .menu {
@@ -161,10 +210,14 @@ University theme colors:
     justify-content: space-between;
 }
 
+.menu ul {
+    padding-left: 0px;
+}
+
 nav a {
     
     display: block;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 15px 0;
 
     text-align: center;
@@ -178,8 +231,7 @@ nav a {
 nav a:hover {
     text-shadow: 1px 1px #4A4A49;
     color: #4A4A49;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 
@@ -193,16 +245,21 @@ nav a:hover {
 
 .main article h1 {
     font-size: 2em;
+    margin-top: 1em;
 }
 
 .main aside {
     color: #4A4A49;
     padding: 0px 5% 10px;
+    margin-top: 30px;
 }
 
 .footer-container footer {
+    display: block;
     color: #4A4A49;
     padding: 20px 0;
+    text-align: center;
+
 }
 
 /* ===============
@@ -241,12 +298,16 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
+    /* nav a {
         float: left;
         width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
+    } */
+
+    .logo img {
+        float: none;
     }
 
     nav li:first-child a {
@@ -257,6 +318,22 @@ nav a:hover {
         margin-right: 0;
     }
 
+    .menu {
+        flex-direction: column;
+    }
+
+    .menulist {
+        display: flex;
+        margin-right: 0;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    /* nav a:hover {
+        text-shadow: none;
+        text-decoration: none;
+    
+    } */
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -278,9 +355,9 @@ nav a:hover {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+     -webkit-box-shadow: 0 10px 10px #4A4A49;
+         -moz-box-shadow: 0 5px 10px #4A4A49;
+              box-shadow: 0 5px 15px #4A4A49;
     }
 
 /* ============
@@ -289,6 +366,10 @@ nav a:hover {
 
     .title {
         float: left;
+    }
+
+    .menu {
+        flex-direction: row;
     }
 
     /* nav {
@@ -438,6 +519,14 @@ nav a:hover {
 .menulist {
     display: flex;
     margin-right: 0;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
+}
+
+.team-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
