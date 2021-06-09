@@ -1,6 +1,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
+    scroll-behavior: smooth;
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -58,10 +59,19 @@ textarea {
 
 body {
     font: 16px/26px Montserrat;
+    background: #ECECEC;
+}
+
+body h2 {
+    padding: 20px 0px 20px;
+}
+
+body a {
+    text-decoration: none;
 }
 
 .wrapper {
-    width: 90%;
+    width: 100%;
     margin: 0 5%;
 }
 
@@ -79,9 +89,9 @@ University theme colors:
 #3A3A3A grey - main text
 */
 
-.header-container {
-    border-top: 10px solid #4A4A49;
-}
+/* .header-container {
+    border-top: 1px solid #4A4A49;
+} */
 
 /* .footer-container {
     border-top: 15px solid #4A4A49;
@@ -93,6 +103,9 @@ University theme colors:
 
 .header-container {
     background: #ECECEC;
+    -webkit-box-shadow: 0 10px 10px #848484;
+         -moz-box-shadow: 0 5px 10px #848484;
+              box-shadow: 0 5px 15px #848484;
 }
 
 .main {
@@ -100,9 +113,13 @@ University theme colors:
     border-bottom-color: #4A4A49;
 }
 
-.footer-container {
+footer {
+    padding-bottom: 30px;
+}
+
+.footer-container footer {
+    background: #181817;
     display: flex;
-    background: rgba(0, 0, 0, 0.952);
 }
 .footer-container p {
     color: #fff;
@@ -131,7 +148,7 @@ University theme colors:
 
 .main aside {
     background: #FBB800;
-    margin-top: 30px;
+    margin-top: 1em;
 }
 
 .title {
@@ -139,7 +156,7 @@ University theme colors:
 }
 
 .team-container {
-    background: #fff;
+    background: #ECECEC;
     margin-bottom: 0px;
     max-width: 100%;
     display: flex;
@@ -172,9 +189,9 @@ University theme colors:
 .team-member img {
     /* max-width: 100px; */
     width: 100%;
-    -webkit-box-shadow: 0 10px 10px #4A4A49;
-       -moz-box-shadow: 0 5px 10px #4A4A49;
-            box-shadow: 0 5px 15px #4A4A49;
+    -webkit-box-shadow: 0 10px 10px #848484;
+       -moz-box-shadow: 0 5px 10px #848484;
+            box-shadow: 0 5px 15px #848484;
 }
 
 .contact-container {
@@ -249,19 +266,36 @@ nav a:hover {
     MOBILE: Main
    ============== */
 
-.main {
+/* .main {
     padding: 30px 0;
-}
+} */
 
 .main article h1 {
-    font-size: 2em;
-    margin-top: 1em;
+    display: inline-block;
+    font-size: 2.3em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding: 20px 0px 20px;
 }
 
 .main aside {
     color: #4A4A49;
-    padding: 0px 5% 10px;
-    margin-top: 30px;
+    padding: 3px 10px;
+    margin-top: 1em;
+}
+
+.main aside p {
+    text-align: center;
+}
+
+.main-container header {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+.main-container section {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 .footer-container footer {
@@ -335,8 +369,9 @@ nav a:hover {
     .menulist {
         display: flex;
         margin-right: 0;
-        gap: 50px;
+        gap: 30px;
         justify-content: center;
+        font-size: 14px;
     }
 
     /* nav a:hover {
@@ -365,9 +400,9 @@ nav a:hover {
 
     .header-container,
     .main aside {
-     -webkit-box-shadow: 0 10px 10px #4A4A49;
-         -moz-box-shadow: 0 5px 10px #4A4A49;
-              box-shadow: 0 5px 15px #4A4A49;
+     -webkit-box-shadow: 0 10px 10px #848484;
+         -moz-box-shadow: 0 5px 10px #848484;
+              box-shadow: 0 5px 15px #848484;
     }
 
 /* ============
@@ -392,14 +427,14 @@ nav a:hover {
    ============ */
 
     .main article {
-        float: left;
-        width: 57%;
+        display: flex:
+        width: 100%;
     }
 
-    .main aside {
+    /* .main aside {
         float: right;
         width: 28%;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1140px) {
@@ -524,12 +559,16 @@ nav a:hover {
     h3 {
         page-break-after: avoid;
     }
+
+    h2 {
+        padding: 20px 0px 20px;
+    }
 }
 
 .menulist {
     display: flex;
     margin-right: 0;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -537,6 +576,6 @@ nav a:hover {
     width: 100%;
     display: block;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 75px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
