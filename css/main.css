@@ -194,6 +194,15 @@ footer {
             box-shadow: 0 5px 15px #848484;
 }
 
+.team-member img:hover {
+    /* max-width: 100px; */
+    width: 100%;
+    transition: 200ms ease-in;
+    -webkit-box-shadow: 0 10px 10px #FBB800;
+       -moz-box-shadow: 0 5px 10px #FBB800;
+            box-shadow: 0 5px 15px #FBB800;
+}
+
 .contact-container {
     background: #FBB800;
     height: 10em;
