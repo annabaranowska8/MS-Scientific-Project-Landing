@@ -207,7 +207,25 @@ footer {
     height: 10em;
     text-align: center;
     padding: 1em;
-    box-shadow: 3px -2px 14px #4A4A49;
+    /* box-shadow: 3px -2px 14px #4A4A49; */
+}
+
+.support-container {
+    background: #fff;
+    height: 10em;
+    text-align: center;
+    line-height: 1.5;
+    padding: 1em;
+    box-shadow: 3px -2px 14px #4a4a49;
+    height: 350px;
+}
+
+.support-container h2 {
+    margin: 10px;
+}
+
+.support-container svg {
+    height: 200px;
 }
 /* .contact-title h1 {
 } */
